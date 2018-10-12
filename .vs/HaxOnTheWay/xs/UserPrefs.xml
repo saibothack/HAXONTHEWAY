@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{122BB96E-F94B-4F34-9CC0-5E6EFEB57484}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HaxOnTheWay/Views/CommandOptionsPage.xaml.cs">
+    <Files>
+      <File FileName="HaxOnTheWay/Views/CommandOptionsPage.xaml.cs" Line="72" Column="1" />
+      <File FileName="HaxOnTheWay/Views/CommandPhotoPage.xaml.cs" Line="101" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.HaxOnTheWay.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/Developer/HaxOnTheWay/HaxOnTheWay/Views/CommandPhotoPage.xaml.cs" relfile="HaxOnTheWay/Views/CommandPhotoPage.xaml.cs" line="99" column="19" />
+      <Breakpoint file="/Volumes/Developer/HaxOnTheWay/HaxOnTheWay/Views/CommandPhotoPage.xaml.cs" relfile="HaxOnTheWay/Views/CommandPhotoPage.xaml.cs" line="86" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "665451617833",
+    "firebase_url": "https://haxontheway.firebaseio.com",
+    "project_id": "haxontheway",
+    "storage_bucket": "haxontheway.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665451617833:android:7a4bcc94eb3e9a2d",
+        "android_client_info": {
+          "package_name": "com.sysware.HaxOnTheWay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665451617833-o4k3hpl4t2r31qt1t9jhbu51ljev6ift.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoKC4dlLIgPaI_ogCdekmbGGNotDJLANA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665451617833:android:b0c62d4e8a2e734f",
+        "android_client_info": {
+          "package_name": "com.sysware.haex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665451617833-o4k3hpl4t2r31qt1t9jhbu51ljev6ift.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoKC4dlLIgPaI_ogCdekmbGGNotDJLANA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665451617833:android:4b353533786c1781",
+        "android_client_info": {
+          "package_name": "com.sysware.haexpress.HaxOnTheWay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665451617833-o4k3hpl4t2r31qt1t9jhbu51ljev6ift.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoKC4dlLIgPaI_ogCdekmbGGNotDJLANA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665451617833:android:0a1337c8fa426b6f",
+        "android_client_info": {
+          "package_name": "com.sysware.haexpress.TestNot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665451617833-o4k3hpl4t2r31qt1t9jhbu51ljev6ift.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoKC4dlLIgPaI_ogCdekmbGGNotDJLANA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="HaxOnTheWay.Views.loginPage"
+    BackgroundColor="#000000"
+    Title="H.A.Express">
+	<ContentPage.Content>
+        <ScrollView>
+            <Grid x:Name="LayoutRoot">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <ActivityIndicator IsRunning="{Binding IsBusy, Mode=TwoWay}" Grid.RowSpan="3" Color="#11044c" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                <StackLayout Grid.Row="1" Orientation="Vertical" Margin="0,40,0,10">
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="0,5,0,0">
+                        <Image Aspect="AspectFit" Margin="10" HeightRequest="200" WidthRequest="200"  VerticalOptions="Center" HorizontalOptions="Center" x:Name="imgLogo"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Orientation="Vertical" Opacity="0.8">
+                    <StackLayout Orientation="Vertical" Margin="40,20">
+                        <Label Text="Correo" TextColor="White"></Label>
+                        <Entry Text="{Binding driver.sEmail, Mode=TwoWay}" x:Name="CellPhoneEntry" TextColor="White" Placeholder="Email" PlaceholderColor="White" FontSize="18" HorizontalTextAlignment="Start" Keyboard="Email" />
+                        <Label Text="Contraseña" TextColor="White"></Label>
+                        <Entry Text="{Binding driver.sPhone, Mode=TwoWay}" x:Name="PasswordEntry" TextColor="White" Placeholder="Password" PlaceholderColor="White" IsPassword="True" FontSize="18" HorizontalTextAlignment="Start"/>
+                        <Button Margin="0,10" Text="Login" BackgroundColor="#C7C8CA" TextColor="Black" BorderColor="Black" FontSize="18" Command="{Binding LoginCommand}"/>
+                        <Label Text="{Binding Message, Mode=OneWay}" TextColor="#91c441"/>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:ButtonCircle.FormsPlugin.Abstractions;assembly=ButtonCircle.FormsPlugin.Abstractions"
+    x:Class="HaxOnTheWay.Views.CommandsPage"
+    BackgroundColor="#000000"
+    Title="H.A.Express">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text ="Ubicaciones" Priority="0" Order="Secondary" Clicked="markers"/>
+        <!--<ToolbarItem Text ="Salir" Priority="0" Order="Secondary" Command="{Binding LogoutCommand}" Clicked="Logout"/>-->
+        <ToolbarItem Text ="Salir" Priority="0" Order="Secondary" Clicked="Logout"/>
+    </ContentPage.ToolbarItems>
+	<ContentPage.Content>
+        <ListView x:Name="listCommands" ItemSelected="OnSelection" RowHeight="60">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                    <local:CircleButton VerticalOptions="Center" Margin="5"
+                                            HeightRequest="20" WidthRequest="20" 
+                                            BorderThickness="5" BorderColor="{Binding ColorCommand}" 
+                                            BackgroundColor="{Binding ColorCommand}">
+                                    </local:CircleButton>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                    <Label Text="{Binding iCommand}" TextColor="White" Margin="10" WidthRequest="30"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding sAddress}" TextColor="White" HorizontalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding sAddressDelivery}" TextColor="White" HorizontalOptions="StartAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+	</ContentPage.Content>
+</ContentPage>

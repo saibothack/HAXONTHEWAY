@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="HaxOnTheWay.Views.CommandPhotoPage"
+    BackgroundColor="#565459"
+    Title="H.A.Express"
+    NavigationPage.HasBackButton="True">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text ="Comandas" Priority="0" Order="Secondary" Command="{Binding CommandsCommand}" Clicked="Commands_Clicked"/>
+        <!--<ToolbarItem Text ="Opciones" Priority="0" Order="Secondary" Clicked="ToolbarItem_Clicked"/>
+        <ToolbarItem Text ="Salir" Priority="0" Order="Secondary" Command="{Binding LogoutCommand}"/>-->
+    </ContentPage.ToolbarItems>
+	<ContentPage.Content>
+        <ScrollView>
+            <Grid HorizontalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="33*" />
+                    <ColumnDefinition Width="33*" />
+                    <ColumnDefinition Width="33*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <ActivityIndicator Grid.RowSpan="4" Color="#11044c" VerticalOptions="Center" HorizontalOptions="Center" x:Name="actIndicador"/>
+                <Button Text="Foto" Grid.Column="0" Grid.Row="0" BackgroundColor="#C7C8CA" TextColor="Black" Clicked="Foto_Clicked"></Button>
+                <Button Text="Hecho" Grid.Column="1" Grid.Row="0" BackgroundColor="#C7C8CA" TextColor="Black" Clicked="Hecho_Clicked"></Button>
+                <Button Text="Borrar" Grid.Column="2" Grid.Row="0" BackgroundColor="#C7C8CA" TextColor="Black" Clicked="Borrar_Clicked"></Button>
+                <Image BackgroundColor="White" Grid.ColumnSpan="3" Grid.Row="1" x:Name="PhotoImage"></Image>
+                <Label Text="Nombre" Grid.ColumnSpan="3" Grid.Row="3" TextColor="White"></Label>
+                <Entry Placeholder="Ingrese su nombre" Grid.ColumnSpan="3" Grid.Row="4" TextColor="White" x:Name="txtNombre"></Entry>
+                <Label Text="Notas" Grid.ColumnSpan="3" Grid.Row="5" TextColor="White"></Label>
+                <Editor Grid.ColumnSpan="3" Grid.Row="6" TextColor="White" x:Name="txtNotas"></Editor>
+            </Grid>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

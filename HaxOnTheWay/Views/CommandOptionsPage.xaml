@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="HaxOnTheWay.Views.CommandOptionsPage"
+    BackgroundColor="#565459"
+    Title="H.A.Express"
+    NavigationPage.HasBackButton="True"
+    NavigationPage.HasNavigationBar="True">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text ="Comandas" Priority="0" Order="Secondary" Command="{Binding CommandsCommand}" Clicked="Commands_Clicked"/>
+        <!--<ToolbarItem Text ="Salir" Priority="0" Order="Secondary" Command="{Binding LogoutCommand}" Clicked="Salir_Clicked"/>-->
+    </ContentPage.ToolbarItems>
+	<ContentPage.Content>
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*" />
+                <RowDefinition Height="25*" />
+                <RowDefinition Height="25*" />
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+            <Button Text="No stok" Grid.Row="0" Clicked="Button_ClickedAsync"></Button>
+            <Button Text="Ausente" Grid.Row="1" Clicked="Button_Clicked_1"></Button>
+            <Button Text="Rechazado" Grid.Row="2" Clicked="Button_Clicked_2"></Button>
+            <Button Text="Cancelado" Grid.Row="3" Clicked="Button_Clicked_3"></Button>
+        </Grid>
+	</ContentPage.Content>
+</ContentPage>

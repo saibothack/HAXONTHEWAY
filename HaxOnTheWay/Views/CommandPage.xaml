@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="HaxOnTheWay.Views.CommandPage"
+    BackgroundColor="#000000"
+    Title="H.A.Express"
+    NavigationPage.HasBackButton="True"
+    NavigationPage.HasNavigationBar="True">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text ="Comandas" Priority="0" Order="Secondary" Command="{Binding CommandsCommand}" Clicked="Commands_Clicked"/>
+        <ToolbarItem Text ="Opciones" Priority="0" Order="Secondary" Clicked="ToolbarItem_Clicked"/>
+        <!--<ToolbarItem Text ="Salir" Priority="0" Order="Secondary" Command="{Binding LogoutCommand}"/>-->
+    </ContentPage.ToolbarItems>
+	<ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                    <!--<StackLayout Orientation="Horizontal">
+                        <Label Text="Estatus: " TextColor="White" />
+                        <Label TextColor="White" x:Name="sStatus"/>
+                    </StackLayout>-->
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Fecha: " TextColor="White" FontSize="14" />
+                        <Label TextColor="White" x:Name="sDate" FontSize="14"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Tipo de servicio: " TextColor="White" FontSize="14" />
+                    <Label TextColor="White" x:Name="sTypeCommand" FontSize="14"/>
+                    <Label TextColor="White" x:Name="sSubservicio" FontSize="14"/>
+                </StackLayout>
+
+                <!--<StackLayout Orientation="Horizontal">
+                    <Label Text="Subservicio: " TextColor="White" />
+                    <Label TextColor="White" x:Name="sSubservicio"/>
+                </StackLayout>-->
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Entregar antes de: " TextColor="White"  FontSize="14"/>
+                    <Label TextColor="White" x:Name="sSchedules" FontSize="14"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Recoger en: " TextColor="White" FontSize="14" />
+                            <Label TextColor="White" x:Name="sCompany" FontSize="14"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Contacto: " TextColor="White" FontSize="14"/>
+                            <Label TextColor="White" x:Name="sContact" FontSize="14"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" x:Name="sAddress" FontSize="14"/>
+                            <Label TextColor="White" x:Name="sCity" FontSize="14"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" x:Name="sCP" FontSize="14"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" x:Name="sPhoneLayout">
+                            <Label Text="Tel: " TextColor="White" FontSize="14"/>
+                            <Label TextColor="Yellow" x:Name="sPhone" FontSize="14"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" x:Name="imgPikupLayout" HorizontalOptions="EndAndExpand">
+                        <Image x:Name="imgPikup"></Image>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Entregar en" TextColor="White" FontSize="14" />
+                            <Label TextColor="White" x:Name="sCompanyDelivery" FontSize="14"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Contacto:" TextColor="White" FontSize="14"/>
+                            <Label TextColor="White" x:Name="sContactDelivery" FontSize="14"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" x:Name="sAddressDelivery" FontSize="14"/>
+                            <Label TextColor="White" x:Name="sCityDelivery" FontSize="14"/>
+                        </StackLayout>
+                        <!--<StackLayout Orientation="Horizontal">
+                            <Label TextColor="White" x:Name="sCPDelivery"/>
+                        </StackLayout>-->
+                        <StackLayout Orientation="Horizontal" x:Name="sPhoneDeliveryLayout">
+                            <Label Text="Tel:" TextColor="White" FontSize="14"/>
+                            <Label TextColor="Yellow" x:Name="sPhoneDelivery" FontSize="14"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" x:Name="imgDeliveryLayout" HorizontalOptions="EndAndExpand">
+                        <Image x:Name="imgDelivery"></Image>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Total piezas:" TextColor="White"  FontSize="14"/>
+                    <Label TextColor="White" x:Name="sQuanty" FontSize="14"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Descripción:" TextColor="White" FontSize="14" />
+                    <Label TextColor="White" x:Name="sDescription" FontSize="14"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Referencia/SKU:" TextColor="White" FontSize="14"/>
+                    <Label TextColor="White" x:Name="sReference" FontSize="14"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Instrucciones:" TextColor="White" FontSize="14" />
+                    <Label TextColor="Yellow" x:Name="sInstruction" FontSize="14"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand">
+                    <Button Text="Confirmar" BackgroundColor="#C7C8CA" TextColor="Black" BorderColor="Black" FontSize="18" Clicked="OnNavigateButtonClickedConfirm" x:Name="btnConfirm"></Button>
+                    <Button Text="Recogida" BackgroundColor="#C7C8CA" TextColor="Black" BorderColor="Black" FontSize="18" Clicked="OnNavigateButtonClickedPikup" x:Name="btnPickup"></Button>
+                    <Button Text="Entregar" BackgroundColor="#C7C8CA" TextColor="Black" BorderColor="Black" FontSize="18" Clicked="OnNavigateButtonClickedDelivery" x:Name="btnDelivery"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>
